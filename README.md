@@ -1,6 +1,6 @@
 # Gamatrix
 
-![Build Status Badge](https://github.com/d3r3kk/gamatrix/workflows/CI/badge.svg)
+[![CI](https://github.com/d3r3kk/gamatrix/workflows/CI/badge.svg)](https://github.com/d3r3kk/gamatrix/actions?query=workflow%3ACI)
 
 An app to help you and your Steam friends determine what game to play.
 
