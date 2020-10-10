@@ -6,7 +6,7 @@ from . import _abc
 
 
 class Exit(_abc.Command):
-    """ exit
+    """exit
     Log out from Steam and exit the gamatrix application.
 
     Usage: exit

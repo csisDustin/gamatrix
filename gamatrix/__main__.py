@@ -1,13 +1,18 @@
 import docopt  # type: ignore
+from importlib.metadata import PackageNotFoundError, version
 
 import gamatrix.appmain as appmain
 import gamatrix.config as appcfg
 import gamatrix.doc as appdoc
 
-GAMATRIX_VERSION = 0.9
-
 if __name__ == "__main__":
-    opt = docopt.docopt(appdoc.__doc__, version=GAMATRIX_VERSION, options_first=True)
+    try:
+        ver = version("gamatrix")
+    except PackageNotFoundError:
+        # running in dev, no distribution installed in this environment
+        ver = "0.0.0-dev"
+
+    opt = docopt.docopt(appdoc.__doc__, version=ver, options_first=True)
 
     conf = appcfg.GamatrixConfig(opt)
     if conf.api_key() == "":

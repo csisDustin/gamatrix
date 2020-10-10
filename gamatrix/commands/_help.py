@@ -7,8 +7,8 @@ from . import _abc
 
 
 class Help(_abc.Command):
-    """ Show help for all commands.
-        Usage: help
+    """Show help for all commands.
+    Usage: help
     """
 
     def __init__(self):

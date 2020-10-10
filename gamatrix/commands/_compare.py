@@ -24,7 +24,7 @@ class FriendGameComparison:
 
 
 class Compare(_abc.Command):
-    """ compare
+    """compare
     Print out a list of all the games owned by the specified user, or of all
     the games owned by the currently logged in user. The user can be specified
     by their steam ID or by their steam user name.
