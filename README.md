@@ -153,7 +153,7 @@ Error message occurs during `python -m pip install -r requirements.txt` stage.
 Error message ends with:
 `"distutils.errors.DistutilsPlatformError: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools": https://visualstudio.microsoft.com/downloads/"`
 
-**Solution:** Install the Microsoft build tools by installing the Visual Studio Community Edition from the link provided. Be certain to install the `MSVC v[VER] - VS 20xx C++ x64/x86 build tools (vMAJ.MIN)` are selected in "Individual Components" within the Visual Studio installer. You can install the "Desctop development with C++" workload to ensure you get everything. Alternatively, install only the "C++ Build Tools" workload for the latest Visual Studio (currently [you can find them for Visual Studio 2019 here](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019)).
+**Solution:** Install the Microsoft build tools by installing the Visual Studio Community Edition from the link provided. Be certain to install the `MSVC v[VER] - VS 20xx C++ x64/x86 build tools (vMAJ.MIN)` are selected in "Individual Components" within the Visual Studio installer. You can install the "Desktop development with C++" workload to ensure you get everything. Alternatively, install only the "C++ Build Tools" workload for the latest Visual Studio (currently [you can find them for Visual Studio 2019 here](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019)).
 
 ---
 
